@@ -39,6 +39,21 @@ The command used to compile using the RISC-V compiler is **riscv64-unknown-elf-g
 and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will generate the assembly code
 
 
+---
+![assemblygeneration](https://github.com/user-attachments/assets/92db2086-87fa-4a03-85c1-b258818141b4)
+---
+
+### 4. Generating a smaller version of assembly code using the fast command 
+
+The command used to compile the samller version using the RISC-V compiler is **riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=riscv64i -o sum1ton.o sum1ton.c** this will create the objdump file
+and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will generate the assembly code
+
+
+---
+
+
+
+
 
 
 
