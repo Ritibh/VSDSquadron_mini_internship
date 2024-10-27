@@ -106,8 +106,12 @@ Below are the steps-
 
 ![simple_c_code_gcc_output](https://github.com/user-attachments/assets/71ecf5cb-cc33-4299-9e46-2f78430fc787)
 
+2. Now we will generate the assembly code and objdump using the -O1 and -Ofast command
 
-3. Now we  will test the same output using spike
+
+
+
+4. Now we  will test the same output using spike
 
    ```
    spike pk table.o
@@ -117,7 +121,7 @@ Below are the steps-
    ![simple_spike_op](https://github.com/user-attachments/assets/ef9554f5-288a-44a5-b8e6-260fdeb002f1)
 
 
-4. Now we will debug the assembly code with help of spike
+5. Now we will debug the assembly code with help of spike
 
 ```
 spike -d pk table.o
@@ -139,6 +143,15 @@ until pc 0 100b0
 reg 0 a0
 
 ```
+---
+![contents a0](https://github.com/user-attachments/assets/27b1b9fa-230f-4264-8e99-503cc9e1543c)
+---
+---
+![more debugging](https://github.com/user-attachments/assets/8db687e6-e9bc-41c5-8b5e-8c5fb86033eb)
+---
+
+
+
 
 
 
