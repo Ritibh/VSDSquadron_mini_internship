@@ -99,8 +99,22 @@ this will show contents of register a0.
 
 ## Program to find table of a number
 **now we will write a simple c code to calculate table of any number and then perform gcc/spike simulation and create objdump as well as debugging using SPIKE**
+
 Below are the steps-
+
 1. write a C code and compile using  ``` gcc table.c ``` and get output using ``` ./a.out ```
+
+![simple_c_code_gcc_output](https://github.com/user-attachments/assets/71ecf5cb-cc33-4299-9e46-2f78430fc787)
+
+
+2. Now we  will test the same output using spike
+
+   ```
+   spike pk table.o
+
+   ```
+
+   
 
 
 
