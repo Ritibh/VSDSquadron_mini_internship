@@ -107,12 +107,40 @@ Below are the steps-
 ![simple_c_code_gcc_output](https://github.com/user-attachments/assets/71ecf5cb-cc33-4299-9e46-2f78430fc787)
 
 
-2. Now we  will test the same output using spike
+3. Now we  will test the same output using spike
 
    ```
    spike pk table.o
 
    ```
+
+   ![simple_spike_op](https://github.com/user-attachments/assets/ef9554f5-288a-44a5-b8e6-260fdeb002f1)
+
+
+4. Now we will debug the assembly code with help of spike
+
+```
+spike -d pk table.o
+
+```
+this will open the debugger and now we can start to debug
+
+- First we will try to know the contents of a register , since the running of the main code starts from ``` 100b0 ``` address which has register ``` a0 ```
+
+- we will identify the contents of ``` a0 ```
+
+using
+
+```
+until pc 0 100b0
+```
+
+```
+reg 0 a0
+
+```
+
+
 
    
 
