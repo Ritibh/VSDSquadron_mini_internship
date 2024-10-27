@@ -74,6 +74,7 @@ The first step is to confirm the output of the  **sum1ton.c** code using the SPI
 ---
 ![spike output](https://github.com/user-attachments/assets/5d7af266-b81a-4b56-a68a-5a1ef6316faf)
 ---
+
 ### Debugging the sum1ton.o assembly code
 - open the **Objdump** of code by using the following command
 ```
@@ -97,6 +98,8 @@ reg 0 a0
 this will show contents of register a0.
 
 
+
+
 ## Program to find table of a number
 **now we will write a simple c code to calculate table of any number and then perform gcc/spike simulation and create objdump as well as debugging using SPIKE**
 
@@ -104,13 +107,14 @@ Below are the steps-
 
 **1. write a C code and compile using  ``` gcc table.c ``` and get output using ``` ./a.out ```**
 
+![simple_c_code](https://github.com/user-attachments/assets/ef5091ac-fa53-4c3e-aa80-31f1008d2849)
 
 
 ![simple_c_code_gcc_output](https://github.com/user-attachments/assets/71ecf5cb-cc33-4299-9e46-2f78430fc787)
 
 **2. Now we will generate the assembly code and objdump using the -O1 and -Ofast command**
 
----
+
 
 ![simple_c_code_with_01](https://github.com/user-attachments/assets/f75be944-7505-4127-87aa-33dae6f24631)
 
@@ -127,7 +131,7 @@ using the command
 riscv64-elf-unknown-gcc -ofast -mabi=lp64 -march=riscv64 table.o table.c
 ```
 
----
+
 
 
 
