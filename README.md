@@ -97,6 +97,7 @@ reg 0 a0
 ```
 this will show contents of register a0.
 
+![debugging](https://github.com/user-attachments/assets/38505f96-c0e6-41fc-b42f-8da05d0e8ef3)
 
 
 
