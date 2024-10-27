@@ -49,7 +49,7 @@ and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will gene
 
 ### 4. Generating a smaller version of assembly code using the fast command 
 
-The command used to compile the samller version using the RISC-V compiler is **riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=riscv64i -o sum1ton.o sum1ton.c** this will create the objdump file
+The command used to compile the smaller version using the RISC-V compiler is **riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=riscv64i -o sum1ton.o sum1ton.c** this will create the objdump file
 and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will generate the assembly code
 
 
@@ -58,6 +58,13 @@ and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will gene
 ---
 
 
+# TASK 2:
+## SPIKE Simulation and Debugging a simple C code with Interactive Debugging Mode using Spike
+## What is SPIKE?
+Spike is a free, open source C++ simulator for the RISC-V ISA that models a RISC-V core and cache system.It can be used to run programs and a Linux kernel, and can be a starting point for running software on a RISC-V target.
+## Testing the SPIKE Simulator
+The first step is to confirm the output of the **sum1ton.c** code using the SPIKE Simulator. The command for it is:
+**spike pk sum1ton.o**
 
 
 
