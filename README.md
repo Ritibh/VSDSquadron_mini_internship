@@ -8,6 +8,7 @@ A 4-week internship based on VSDSquadron mini RISC-V Board based on RV32EC ISA .
 
 # TASK 1 :
 
+
 ## Installation of RISC-V toolchain using VDI. Writing a C code and compiling using RISC-V compiler and uploading snapshots 
 
 so below are the steps to complete task 1 
@@ -49,8 +50,8 @@ and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will gene
 
 ### 4. Generating a smaller version of assembly code using the fast command 
 
-The command used to compile the smaller version using the RISC-V compiler is **riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=riscv64i -o sum1ton.o sum1ton.c** this will create the objdump file
-and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will generate the assembly code
+The command used to compile the smaller version using the RISC-V compiler is ```**riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=riscv64i -o sum1ton.o sum1ton.c**``` this will create the objdump file
+and now using the command ``` **riscv64-unknown-elf-objdump -d sum1ton.o** ``` will generate the assembly code
 
 
 ---
@@ -62,9 +63,52 @@ and now using the command **riscv64-unknown-elf-objdump -d sum1ton.o** will gene
 ## SPIKE Simulation and Debugging a simple C code with Interactive Debugging Mode using Spike
 ## What is SPIKE?
 Spike is a free, open source C++ simulator for the RISC-V ISA that models a RISC-V core and cache system.It can be used to run programs and a Linux kernel, and can be a starting point for running software on a RISC-V target.
-## Testing the SPIKE Simulator
-The first step is to confirm the output of the **sum1ton.c** code using the SPIKE Simulator. The command for it is:
+
+### Testing the SPIKE Simulator
+
+
+The first step is to confirm the output of the  **sum1ton.c** code using the SPIKE Simulator. The command for it is:
+```
 **spike pk sum1ton.o**
+```
+---
+![spike output](https://github.com/user-attachments/assets/5d7af266-b81a-4b56-a68a-5a1ef6316faf)
+---
+### Debugging the sum1ton.o assembly code
+- open the **Objdump** of code by using the following command
+```
+riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+- open the debugger in another terminal by using the following command
+```
+spike -d pk sum1ton.o
+
+```
+#### Now we can perform the debug and know the contents of the Registers and what happens after every instruction and address
+
+- To know the contents of a register at a particular address use the following command
+
+```
+until pc 0 100b0
+```
+```
+reg 0 a0
+```
+this will show contents of register a0.
+
+
+## Program to find table of a number
+**now we will write a simple c code to calculate table of any number and then perform gcc/spike simulation and create objdump as well as debugging using SPIKE**
+Below are the steps-
+1. write a C code and compile using  ``` gcc table.c ``` and get output using ``` ./a.out ```
+
+
+
+
+
+
+
+
 
 
 
