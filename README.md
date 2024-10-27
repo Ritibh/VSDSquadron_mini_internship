@@ -122,14 +122,14 @@ Below are the steps-
 using the command
 
 ```
-riscv64-elf-unknown-gcc -o1 -mabi=lp64 -march=riscv64 table.o table.c
+riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=riscv64 table.o table.c
 ```
 
 ![simple_c_code_with_ofast](https://github.com/user-attachments/assets/33e39325-c2b4-4379-b7c6-735c3b4acfad)
 
 using the command
 ```
-riscv64-elf-unknown-gcc -ofast -mabi=lp64 -march=riscv64 table.o table.c
+riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=riscv64 table.o table.c
 ```
 
 
