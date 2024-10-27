@@ -102,16 +102,38 @@ this will show contents of register a0.
 
 Below are the steps-
 
-1. write a C code and compile using  ``` gcc table.c ``` and get output using ``` ./a.out ```
+**1. write a C code and compile using  ``` gcc table.c ``` and get output using ``` ./a.out ```**
+
+
 
 ![simple_c_code_gcc_output](https://github.com/user-attachments/assets/71ecf5cb-cc33-4299-9e46-2f78430fc787)
 
-2. Now we will generate the assembly code and objdump using the -O1 and -Ofast command
+**2. Now we will generate the assembly code and objdump using the -O1 and -Ofast command**
+
+---
+
+![simple_c_code_with_01](https://github.com/user-attachments/assets/f75be944-7505-4127-87aa-33dae6f24631)
+
+using the command
+
+```
+riscv64-elf-unknown-gcc -o1 -mabi=lp64 -march=riscv64 table.o table.c
+```
+
+![simple_c_code_with_ofast](https://github.com/user-attachments/assets/33e39325-c2b4-4379-b7c6-735c3b4acfad)
+
+using the command
+```
+riscv64-elf-unknown-gcc -ofast -mabi=lp64 -march=riscv64 table.o table.c
+```
+
+---
 
 
 
 
-4. Now we  will test the same output using spike
+
+**3. Now we  will test the same output using spike**
 
    ```
    spike pk table.o
@@ -121,7 +143,7 @@ Below are the steps-
    ![simple_spike_op](https://github.com/user-attachments/assets/ef9554f5-288a-44a5-b8e6-260fdeb002f1)
 
 
-5. Now we will debug the assembly code with help of spike
+**4. Now we will debug the assembly code with help of spike**
 
 ```
 spike -d pk table.o
