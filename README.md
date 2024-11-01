@@ -177,6 +177,14 @@ reg 0 a0
 ![more debugging](https://github.com/user-attachments/assets/8db687e6-e9bc-41c5-8b5e-8c5fb86033eb)
 ---
 
+# TASK 3:
+## RISC-V Instruction types & List of 15 instructions from assembly code with 32 bit instruction
+
+The RISCV ISA has 6 different types of Instructions as **R-type , I-type, S-type, B-type , U-type, J-type** as shown in below image
+
+
+
+
 
 
 
