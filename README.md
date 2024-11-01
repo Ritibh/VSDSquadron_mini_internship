@@ -220,7 +220,40 @@ These Instructions perform arithmetic operation on one of the source registers r
 
 example - ```addi,subi```
 
+![I_type_0](https://github.com/user-attachments/assets/2adeef82-c056-4bec-9fbd-dac302b82bda)
 
+
+#### 2. Load type Instructions - 
+
+These type of instructions provide load operations i.e any data stored in the data memory can be retrieved to rd.
+
+example - ```lb,lh```
+
+#### 3. Jump and Link Instructions - 
+
+This provides jump operations. Target address is obtained by adding the sign extended 12 bit I-immediate to rs1 then setting LSB of result to zero.
+
+### S-type of instructions- 
+
+These instructions provide store operation to store the result into the memory from rs2.
+
+example - ```SB,SH```
+
+### B-type Instructions -
+
+These are the branch Instructions , **example** - ``` BEQ,BNE,BLT,BGE``` . ALU performs the calculation of the branch target address and the decision to take branch is calculated by the control logic.
+
+### U-tpye Instructions-
+
+There are 2 types of U-type Instructions-
+
+**1. LUI (Load Upper Immediate)** - This is used to build the 32 bit constants. The upper 20 bits of rd are filled with data and rest 12 bits are filled with 0.
+
+**2. AUIPC (ADD upper immediate to PC)** - This is used to build PC-relative address. AUIPC forms a 32 bit offset from 20 bit U-immediate fillinf lower 12 bits with 0. , adds this offset to address of AUIPC instruction and places result in rd,
+
+### J-type instructions -
+
+**JAL(Jump and Link)** is used for unconditional jumps. the immediate offset is added to the address of the jump instructions to form jump target address.
 
 
 
