@@ -206,6 +206,130 @@ The R-type instructions perform all the arithmetic operations on rs1, rs2 and st
 Different R-type instructions are shown below image
 
 
+![R_tpye](https://github.com/user-attachments/assets/a028d71d-5a4d-4f5c-8d6c-550596a4f678)
+
+**example** ``` add x1,x2,x3```
+
+### I-type Instructions -
+
+There are three different types of I-type of instructions.
+
+#### 1. Arithmetic Immediate operations -
+
+These Instructions perform arithmetic operation on one of the source registers rs1 and immediate value.
+
+example - ```addi,subi```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 15 Types of Instructions in Assembly code-
+1. ```addi x1, x2, 10```
+
+- Instruction Format: I-type
+- Binary Encoding: 000000000010 00010 000 00001 0010011
+- 32-bit Instruction Code: 0x00210093
+
+  
+2. ```li x5, 0x0```
+
+- Instruction Format: I-type (using addi x5, x0, 0x0)
+- Binary Encoding: 000000000000 00000 000 00101 0010011
+- 32-bit Instruction Code: 0x00000293
+
+3. ```lui x10, 0x20000```
+
+- Instruction Format: U-type
+- Binary Encoding: 00100000000000000000 01010 0110111
+- 32-bit Instruction Code: 0x20000537
+
+4. ```mv x1, x2```
+
+- Instruction Format: I-type (using addi x1, x2, 0)
+- Binary Encoding: 000000000000 00010 000 00001 0010011
+- 32-bit Instruction Code: 0x00010093
+
+5. ```sw x5, 0(x10)```
+
+- Instruction Format: S-type
+- Binary Encoding: 0000000 00101 01010 010 00000 0100011
+- 32-bit Instruction Code: 0x0050a023
+
+6. ```lw x5, 0(x10)```
+
+- Instruction Format: I-type
+- Binary Encoding: 000000000000 01010 010 00101 0000011
+- 32-bit Instruction Code: 0x0000a283
+
+7. ```jal x0, 0x100```
+
+- Instruction Format: J-type
+- Binary Encoding: 00000000000100000000 00000 1101111
+- 32-bit Instruction Code: 0x0000086f
+
+8. ```beq x1, x2, label```
+
+- Instruction Format: B-type (assuming offset is 0x4)
+- Binary Encoding: 000000 00010 00001 000 00010 1100011
+- 32-bit Instruction Code: 0x00210063
+
+9. ```bne x1, x3, label```
+
+- Instruction Format: B-type (assuming offset is 0x4)
+- Binary Encoding: 000000 00011 00001 001 00010 1100011
+- 32-bit Instruction Code: 0x00310063
+
+10.``` slli x5, x1, 1```
+
+- Instruction Format: I-type
+- Binary Encoding: 0000000 00001 00101 001 00001 0010011
+- 32-bit Instruction Code: 0x00109093
+
+11. ```srli x6, x2, 2```
+
+- Instruction Format: I-type
+- Binary Encoding: 0000000 00010 00110 101 00010 0010011
+- 32-bit Instruction Code: 0x0022b093
+
+12. ```and x3, x4, x5```
+
+- Instruction Format: R-type
+- Binary Encoding: 0000000 00101 00100 111 00011 0110011
+- 32-bit Instruction Code: 0x005201b3
+
+13. ```or x2, x3, x4```
+
+- Instruction Format: R-type
+- Binary Encoding: 0000000 00100 00011 110 00010 0110011
+- 32-bit Instruction Code: 0x004181b3
+
+14. ```sub x3, x5, x2```
+
+- Instruction Format: R-type
+- Binary Encoding: 0100000 00010 00101 000 00011 0110011
+- 32-bit Instruction Code: 0x402282b3
+
+
+15. ```xor x1, x2, x3```
+
+- Instruction Format: R-type
+- Binary Encoding: 0000000 00011 00010 100 00001 0110011
+- 32-bit Instruction Code: 0x003100b3
+
+
+
+
 
 
 
