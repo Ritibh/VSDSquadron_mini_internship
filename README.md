@@ -182,6 +182,33 @@ reg 0 a0
 
 The RISCV ISA has 6 different types of Instructions as **R-type , I-type, S-type, B-type , U-type, J-type** as shown in below image
 
+![riscv_instructions](https://github.com/user-attachments/assets/c02ff83d-75c1-4ebc-9057-607dc3b91cfc)
+
+the RISC- V Instructions have a same specific format for all instructions which makes it easy to implement the hardware. The 32 bit field of instructions consist of -
+
+```
+1.  opcode : This sideband signal is used to identify the instruction format
+
+2.  rd : one 0f X0-X31 Registers used as destinaton register to store the ouptut of the operation
+
+3.  rs1 : one of X0-X31 registers used as source registers for data.
+
+4. rs2 : one of X0-X31 registers used as source registers for data.
+
+5. funct3/funct7 : sideband signals used for further decoding of the instruction format.
+
+6. imm : contains immediate value to be processed by instruction
+```
+
+### R-type Instructions -
+The R-type instructions perform all the arithmetic operations on rs1, rs2 and store in rd. The immediate value is 0 for R-type instructions.
+
+Different R-type instructions are shown below image
+
+
+
+
+
 
 
 
