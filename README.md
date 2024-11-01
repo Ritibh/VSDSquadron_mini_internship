@@ -229,19 +229,29 @@ These type of instructions provide load operations i.e any data stored in the da
 
 example - ```lb,lh```
 
+![I_type_1](https://github.com/user-attachments/assets/fd20d408-9c02-4ecb-af1c-2e0e6bfdba61)
+
+
+
 #### 3. Jump and Link Instructions - 
 
 This provides jump operations. Target address is obtained by adding the sign extended 12 bit I-immediate to rs1 then setting LSB of result to zero.
+
+![I_type_2](https://github.com/user-attachments/assets/e7436160-8da5-4528-afc9-a0337979a9fe)
 
 ### S-type of instructions- 
 
 These instructions provide store operation to store the result into the memory from rs2.
 
+![S_type](https://github.com/user-attachments/assets/2725d296-f94a-4f9f-99d9-c0877c06cc29)
+
 example - ```SB,SH```
 
 ### B-type Instructions -
 
-These are the branch Instructions , **example** - ``` BEQ,BNE,BLT,BGE``` . ALU performs the calculation of the branch target address and the decision to take branch is calculated by the control logic.
+These are the branch Instructions , **example** - ``` BEQ,BNE,BLT,BGE``` . ALU performs the calculation of the branch target address and the decision to take branch is calculated by the control logic
+
+![B_type](https://github.com/user-attachments/assets/8c3b4f55-483e-4769-ac06-9aaf6d7d64d3)
 
 ### U-tpye Instructions-
 
@@ -251,11 +261,15 @@ There are 2 types of U-type Instructions-
 
 **2. AUIPC (ADD upper immediate to PC)** - This is used to build PC-relative address. AUIPC forms a 32 bit offset from 20 bit U-immediate fillinf lower 12 bits with 0. , adds this offset to address of AUIPC instruction and places result in rd,
 
+
+![U_type](https://github.com/user-attachments/assets/c9b5db01-9a96-47cc-ac64-2988e38d21da)
+
+
 ### J-type instructions -
 
 **JAL(Jump and Link)** is used for unconditional jumps. the immediate offset is added to the address of the jump instructions to form jump target address.
 
-
+![J_type](https://github.com/user-attachments/assets/f757ae68-99c6-48d0-9652-1a7bf2813325)
 
 
 
