@@ -375,6 +375,83 @@ There are 2 types of U-type Instructions-
 - 32-bit Instruction Code: 0x003100b3
 
 
+# TASK 4
+## Functional simulation and waveform generation using iverilog and gtkwave on RISC-V Netlist.
+### Below are the steps - 
+
+**1. Installation of gtkwave and iverlog**
+Firstly we need to install gtkwave and iverilog, to do so run the following commands
+```
+sudo apt get update
+```
+```
+sudo apt install iverilog gtkwave
+```
+
+**2.Clone the Github Repository**
+
+*```since designing of RISC-V is not part of this internship we need to clone the github repository```*
+
+use the following command-
+```
+git clone https://github.com/vinayrayapati/rv32i
+```
+
+**3. Performing simulation**
+Now to perform the simulation , change the directory ```cd rv32i```.
+
+And run the following command-
+
+```
+iverilog -o iiitb_rv32i iiitb_rv321.v iiitb_32i_tb.v
+```
+and now to run simulation use 
+```
+./iiitb_rv32i
+```
+
+**4. Waveform Generation**
+
+To view waveform , use
+```
+gtkwave iiitb_rv32i.vcd
+```
+This will open the wave form viewer , now add the following signals to view the instructions and output
+```
+- clk
+- EX_MEM_IR[31:0]
+- ID_EX_A[31:0]
+- ID_EX_B[31:0]
+- EX_MEM_ALUOUT[31:0]
+```
+Now we can start to view the results,
+
+### ADD r1,r2,r3:
+
+
+
+### SUB r3,r1,r2:
+
+
+### AND r2,r1,r3:
+
+
+
+### OR r8,r2,r5:
+
+
+
+### XOR r8,r1,r4:
+
+
+### SLT r10,r2,r4:
+
+
+
+
+
+
+
 
 
 
