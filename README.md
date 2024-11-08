@@ -428,23 +428,31 @@ Now we can start to view the results,
 
 ### ADD r1,r2,r3:
 
+![add](https://github.com/user-attachments/assets/a1122752-eeaa-4cce-987a-8da3a727edbb)
+
+
+
+
+
 
 
 ### SUB r3,r1,r2:
-
+![sub](https://github.com/user-attachments/assets/4f0d10d2-cc38-4795-81b0-6e7dd86399ec)
 
 ### AND r2,r1,r3:
-
-
+![and](https://github.com/user-attachments/assets/7c52c3ca-d633-462a-acb7-2b07efb19db5)
 
 ### OR r8,r2,r5:
+![or](https://github.com/user-attachments/assets/7d45ddb1-7fd7-4427-8d48-b40778e833e7)
 
 
 
-### XOR r8,r1,r4:
+
 
 
 ### SLT r10,r2,r4:
+
+![slt](https://github.com/user-attachments/assets/ae1fce4d-7fd9-47ec-a8c8-b01dc60c0a25)
 
 
 
