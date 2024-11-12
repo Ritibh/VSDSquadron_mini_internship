@@ -456,6 +456,32 @@ Now we can start to view the results,
 
 
 
+# TASK 5:
+
+## Implementation of 2 bit comparator using VSDsquadron mini board
+
+## Project Overview
+
+This project implements a 2 bit comparator , which compares two 2 bit values and displays the result using switching on of LED's. The result is calculated on the basis of output calculated using truth table of the 2 bit comparator.
+
+## Components Required
+
+1. VSDsquadron mini board
+2. Breadboard
+3. jumper wires
+4. LED's (red,yellow,green)
+5. Resistors(2.2kohm)
+6. Arduino IDE
+
+## Circuit Diagram
+
+
+
+
+
+
+
+
 
 
 
