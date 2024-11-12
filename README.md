@@ -476,6 +476,14 @@ This project implements a 2 bit comparator , which compares two 2 bit values and
 ## Circuit Diagram
 
 
+![circuit diagram](https://github.com/user-attachments/assets/3fab85a4-78b4-4f0a-807b-6111bd78b64a)
+
+
+
+## Pin Connections
+
+
+
 
 
 
