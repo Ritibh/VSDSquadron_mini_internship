@@ -482,6 +482,15 @@ This project implements a 2 bit comparator , which compares two 2 bit values and
 
 ## Pin Connections
 
+| COMPONENT | CONNECTION |
+|--------|--------|
+| LED| VSDsquadron board |
+| LED1 | PIN4(PD4) |
+| LED2 | PIN5(PD5) |
+| LED3 | PIN6(PD6) | 
+
+## TRUTH TABLE
+
 
 
 
