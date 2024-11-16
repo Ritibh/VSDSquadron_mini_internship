@@ -1,5 +1,5 @@
 # VSDSquadron_mini_internship
-A 4-week internship based on VSDSquadron mini RISC-V Board based on RV32EC ISA .
+A 4-week internship based on VSDSquadron mini RISC-V Board based on RV32EC ISA .It includes understanding the RISC-V ISA , running simulations on the verilog netlist of the RISC-V processor , Debugging the RISC-V assembly code and a demonstration of the project including based on the VSDsquadron mini board.
 
 ## Details
 ### Name : Ritibh Singh
